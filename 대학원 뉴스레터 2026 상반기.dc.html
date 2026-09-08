@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="_ds/modernist-45ce2069-a945-4490-bdd5-878714733c87/styles.css">
+<script src="_ds/modernist-45ce2069-a945-4490-bdd5-878714733c87/_ds_bundle.js"></script>
+<script src="./doc-page.js"></script>
+<style>
+:root{
+  --font-heading:"Archivo","IBM Plex Sans KR",system-ui,sans-serif;
+  --font-body:"Archivo","IBM Plex Sans KR",system-ui,sans-serif;
+  --color-accent:#0858a8;
+  --color-accent-100:#eff5fb;--color-accent-200:#d6e5f4;--color-accent-300:#b0cceb;
+  --color-accent-400:#6fa3d6;--color-accent-500:#1f74c0;--color-accent-600:#0858a8;
+  --color-accent-700:#064a8c;--color-accent-800:#05386a;--color-accent-900:#06294b;
+  --color-accent-2:#0858a8;
+  --color-accent-2-100:#eff5fb;--color-accent-2-200:#d6e5f4;--color-accent-2-300:#b0cceb;
+  --color-accent-2-400:#6fa3d6;--color-accent-2-500:#1f74c0;--color-accent-2-600:#0858a8;
+  --color-accent-2-700:#064a8c;--color-accent-2-800:#05386a;--color-accent-2-900:#06294b;
+  --color-page:#fff;
+  --space-12:48px;
+}
+doc-page:not(:defined){visibility:hidden}
+body{margin:0;background:var(--color-bg)}
+a{color:var(--color-accent-700);text-decoration:none}
+a:hover{color:var(--color-accent)}
+</style>
+</helmet>
+<doc-page size="{{ paper }}">
+
+<section class="page" data-screen-label="01 표지" style="display:flex;flex-direction:column;justify-content:space-between;padding:var(--space-12);background:var(--color-page);color:var(--color-text);font-family:var(--font-body)">
+  <div>
+    <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid var(--color-accent);padding-bottom:var(--space-4)">
+      <img src="assets/gs-logo.png" alt="조선대학교 대학원" style="height:34px;width:auto;display:block">
+      <h6 style="margin:0;color:var(--color-accent)">2026 · 1H</h6>
+    </div>
+    <h6 style="margin:var(--space-8) 0 0;color:var(--color-accent)">Graduate School Newsletter</h6>
+    <h1 style="margin:var(--space-4) 0 0;font-size:52px;line-height:1.16;letter-spacing:-.035em">대학원은<br>지금 이런 일을<br><span style="color:var(--color-accent)">하고 있습니다</span></h1>
+    <p style="margin:var(--space-6) 0 0;font-size:14px;line-height:1.8;color:var(--color-neutral-700);max-width:440px">조선대학교 대학원·미래인재융합대학원이 2026년 1월부터 추진해 온 국책사업, 학과 신설, 글로벌·연구 지원 프로그램을 한 번에 정리했습니다.</p>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);border-top:2px solid var(--color-accent);border-bottom:2px solid var(--color-accent)">
+    <div style="padding:var(--space-4) var(--space-4) var(--space-4) 0;border-right:1px solid var(--color-neutral-300)">
+      <div style="font-family:var(--font-heading);font-weight:800;font-size:30px;letter-spacing:-.02em;color:var(--color-accent)">17</div>
+      <div style="font-size:11.5px;color:var(--color-neutral-700);margin-top:var(--space-1)">국책사업 프로그램</div>
+    </div>
+    <div style="padding:var(--space-4);border-right:1px solid var(--color-neutral-300)">
+      <div style="font-family:var(--font-heading);font-weight:800;font-size:30px;letter-spacing:-.02em;color:var(--color-accent)">36<span style="font-size:14px">명</span></div>
+      <div style="font-size:11.5px;color:var(--color-neutral-700);margin-top:var(--space-1)">해외 현장학습 파견</div>
+    </div>
+    <div style="padding:var(--space-4);border-right:1px solid var(--color-neutral-300)">
+      <div style="font-family:var(--font-heading);font-weight:800;font-size:30px;letter-spacing:-.02em;color:var(--color-accent)">2<span style="font-size:14px">개</span></div>
+      <div style="font-size:11.5px;color:var(--color-neutral-700);margin-top:var(--space-1)">학과 신설</div>
+    </div>
+    <div style="padding:var(--space-4) 0 var(--space-4) var(--space-4)">
+      <div style="font-family:var(--font-heading);font-weight:800;font-size:30px;letter-spacing:-.02em;color:var(--color-accent)">174<span style="font-size:14px">건</span></div>
+      <div style="font-size:11.5px;color:var(--color-neutral-700);margin-top:var(--space-1)">논문게재 장학금</div>
+    </div>
+  </div>
+  <div style="font-size:11.5px;color:var(--color-neutral-700);line-height:1.7">발행 조선대학교 대학원 교학팀 · 미래인재융합대학원<br>2026. 9. 3. 현재 진행 기준 · 초안</div>
+</section>
+
+<section class="page" data-screen-label="02 목차·추진체계" style="display:flex;flex-direction:column;padding:var(--space-12);background:var(--color-page);color:var(--color-text);font-family:var(--font-body)">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid var(--color-accent);padding-bottom:var(--space-3)">
+    <h6 style="margin:0;color:var(--color-accent)">Contents · 추진체계</h6>
+    <h6 style="margin:0;color:var(--color-accent)">02</h6>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;margin-top:var(--space-8)">
+    <div style="padding-right:var(--space-6);border-right:1px solid var(--color-neutral-300)">
+      <h4 style="margin:0 0 var(--space-3)">목차</h4>
+      <sc-for list="{{ toc }}" as="c" hint-placeholder-count="10">
+        <div style="display:flex;gap:var(--space-3);padding:var(--space-2) 0;border-bottom:1px solid var(--color-neutral-200)">
+          <span style="font-family:var(--font-heading);font-weight:800;color:var(--color-accent);font-size:12px;width:20px">{{ c.n }}</span>
+          <span style="font-size:12.5px">{{ c.t }}</span>
+        </div>
+      </sc-for>
+    </div>
+    <div style="padding-left:var(--space-6)">
+      <h4 style="margin:0 0 var(--space-3)">대학원 개요</h4>
+      <p style="margin:0;font-size:12.5px;line-height:1.8;color:var(--color-neutral-800)">조선대학교 대학원은 일반대학원과 미래인재융합대학원 체제로 운영됩니다. 교학팀은 입시·학사·학적·시험·장학등록 업무와 함께 대학원 단위의 국책사업 과제를 수행합니다.</p>
+      <div style="margin-top:var(--space-6);border-top:2px solid var(--color-text);padding-top:var(--space-4)">
+        <div class="card-kicker">Unit 01</div>
+        <div class="card-title" style="margin-top:var(--space-1)">일반대학원</div>
+        <p style="margin:var(--space-1) 0 0;font-size:11.5px;color:var(--color-neutral-700);line-height:1.7">석·박사 학위과정, 종합시험·외국어시험, 연구보조장학금</p>
+      </div>
+      <div style="margin-top:var(--space-4);border-top:1px solid var(--color-neutral-300);padding-top:var(--space-4)">
+        <div class="card-kicker">Unit 02</div>
+        <div class="card-title" style="margin-top:var(--space-1)">미래인재융합대학원</div>
+        <p style="margin:var(--space-1) 0 0;font-size:11.5px;color:var(--color-neutral-700);line-height:1.7">융합·계약학과 학위과정, 재직자 교육과정 운영</p>
+      </div>
+    </div>
+  </div>
+  <div style="margin-top:var(--space-8);border-top:2px solid var(--color-accent);padding-top:var(--space-4)">
+    <h4 style="margin:0">대학원이 수행하는 사업</h4>
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:var(--space-3);margin-top:var(--space-4)">
+      <sc-for list="{{ programs }}" as="p" hint-placeholder-count="4">
+        <div class="card" style="gap:var(--space-1)">
+          <div class="card-kicker">{{ p.k }}</div>
+          <div class="card-title">{{ p.t }}</div>
+          <p class="card-body" style="line-height:1.7">{{ p.d }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section class="page" data-screen-label="03 한눈에" style="display:flex;flex-direction:column;padding:var(--space-12);background:var(--color-accent);color:#fff;font-family:var(--font-body)">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid #fff;padding-bottom:var(--space-3)">
+    <h6 style="margin:0;color:#fff">01 · At a glance</h6>
+    <h6 style="margin:0;color:#fff">03</h6>
+  </div>
+  <h2 style="margin:var(--space-8) 0 0;color:#fff;font-size:38px;line-height:1.2;letter-spacing:-.03em">1월부터 지금까지,<br>한눈에</h2>
+  <p style="margin:var(--space-3) 0 0;font-size:13px;color:#fff;max-width:460px;line-height:1.75">4개 사업 17개 프로그램, 학과 신설, 해외 파견과 연구비 지원이 동시에 돌아가고 있습니다. 아래 수치는 2026. 9. 3. 현재 진행 기준입니다.</p>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);margin-top:var(--space-8);border-top:1px solid rgba(255,255,255,.4);border-left:1px solid rgba(255,255,255,.4)">
+    <sc-for list="{{ tiles }}" as="t" hint-placeholder-count="12">
+      <div style="padding:var(--space-4);border-right:1px solid rgba(255,255,255,.4);border-bottom:1px solid rgba(255,255,255,.4)">
+        <div style="font-family:var(--font-heading);font-weight:800;font-size:34px;letter-spacing:-.03em;line-height:1;color:#fff">{{ t.n }}<span style="font-size:15px">{{ t.u }}</span></div>
+        <div style="font-size:11.5px;color:#fff;line-height:1.55;margin-top:var(--space-2)">{{ t.l }}</div>
+      </div>
+    </sc-for>
+  </div>
+  <div style="margin-top:auto;padding-top:var(--space-6);border-top:2px solid #fff;display:grid;grid-template-columns:repeat(3,1fr)">
+    <div style="padding-right:var(--space-4);border-right:1px solid rgba(255,255,255,.4)">
+      <div style="font-size:13px;font-weight:600;color:#fff">국책사업 4개 동시 수행</div>
+      <div style="font-size:11.5px;color:#fff;line-height:1.65;margin-top:var(--space-1)">대학혁신지원사업 · 글로컬사업 · 앵커사업 · BK21</div>
+    </div>
+    <div style="padding:0 var(--space-4);border-right:1px solid rgba(255,255,255,.4)">
+      <div style="font-size:13px;font-weight:600;color:#fff">목표를 넘어선 프로그램</div>
+      <div style="font-size:11.5px;color:#fff;line-height:1.65;margin-top:var(--space-1)">Triangle 참여 68명, 해외파견 36명, 특화프로그램 참여 92명</div>
+    </div>
+    <div style="padding-left:var(--space-4)">
+      <div style="font-size:13px;font-weight:600;color:#fff">새로 만든 학위과정</div>
+      <div style="font-size:11.5px;color:#fff;line-height:1.65;margin-top:var(--space-1)">원자력발전학과 박사 · 기후위기·환경융합학과 · 웰에이징대학원(추진)</div>
+    </div>
+  </div>
+</section>
+
+<section class="page" data-screen-label="04 월별 흐름" style="display:flex;flex-direction:column;padding:var(--space-12);background:var(--color-page);color:var(--color-text);font-family:var(--font-body)">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid var(--color-accent);padding-bottom:var(--space-3)">
+    <h6 style="margin:0;color:var(--color-accent)">02 · Timeline</h6>
+    <h6 style="margin:0;color:var(--color-accent)">04</h6>
+  </div>
+  <h2 style="margin:var(--space-6) 0 0;letter-spacing:-.025em">월별 활동 흐름</h2>
+  <p style="margin:var(--space-2) 0 0;font-size:12.5px;color:var(--color-neutral-700)">2026년 1월 ~ 9월 · 현재 진행 기준</p>
+  <div style="margin-top:var(--space-6)">
+    <sc-for list="{{ timeline }}" as="row" hint-placeholder-count="8">
+      <div style="display:grid;grid-template-columns:64px 1fr;gap:var(--space-6);border-top:1px solid var(--color-neutral-300);padding:var(--space-4) 0">
+        <div style="font-family:var(--font-heading);font-weight:800;font-size:19px;color:var(--color-accent)">{{ row.m }}</div>
+        <div>
+          <div style="font-size:14px;font-weight:600">{{ row.t }}</div>
+          <p style="margin:var(--space-1) 0 0;font-size:12px;color:var(--color-neutral-700);line-height:1.75">{{ row.d }}</p>
+        </div>
+      </div>
+    </sc-for>
+  </div>
+  <div class="hr" style="margin:0"></div>
+  <p style="margin-top:auto;padding-top:var(--space-4);font-size:11.5px;color:var(--color-neutral-700);line-height:1.7">교학 업무로는 전·후기 수강신청과 복학·수료연구생 등록, 외국어시험과 종합시험 시행, 실험실습비 집행을 함께 처리했습니다.</p>
+</section>
+
+<section class="page" data-screen-label="05 글로벌" style="display:flex;flex-direction:column;padding:var(--space-12);background:var(--color-page);color:var(--color-text);font-family:var(--font-body)">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid var(--color-accent);padding-bottom:var(--space-3)">
+    <h6 style="margin:0;color:var(--color-accent)">03 · Global</h6>
+    <h6 style="margin:0;color:var(--color-accent)">05</h6>
+  </div>
+  <h2 style="margin:var(--space-6) 0 0;letter-spacing:-.025em">대학원생 36명을 해외로 보냈습니다</h2>
+  <p style="margin:var(--space-2) 0 0;font-size:12.5px;color:var(--color-neutral-700)">앵커사업 글로벌 현장학습(GFC) · 대학원 글로벌 현장학습(교비)</p>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;margin-top:var(--space-6);border-top:2px solid var(--color-accent);border-bottom:2px solid var(--color-accent)">
+    <div style="padding:var(--space-6) var(--space-6) var(--space-6) 0;border-right:1px solid var(--color-neutral-300)">
+      <div class="card-kicker">Singapore · 앵커사업(이월금)</div>
+      <div style="font-family:var(--font-heading);font-weight:800;font-size:44px;letter-spacing:-.03em;margin-top:var(--space-2);color:var(--color-accent)">18<span style="font-size:18px">명</span></div>
+      <p style="margin:var(--space-2) 0 0;font-size:12px;color:var(--color-neutral-800);line-height:1.75">MECA 분야 석·박사과정 학생을 싱가포르 현장학습에 파견했습니다. 1인당 최대 500만 원 이내로 지원합니다.</p>
+    </div>
+    <div style="padding:var(--space-6) 0 var(--space-6) var(--space-6)">
+      <div class="card-kicker">교비 · 2026학년도</div>
+      <div style="font-family:var(--font-heading);font-weight:800;font-size:44px;letter-spacing:-.03em;margin-top:var(--space-2);color:var(--color-accent)">18<span style="font-size:18px">명</span></div>
+      <p style="margin:var(--space-2) 0 0;font-size:12px;color:var(--color-neutral-800);line-height:1.75">대학원 글로벌 현장학습 프로그램을 교비로 별도 편성해 파견 규모를 두 배로 늘렸습니다.</p>
+    </div>
+  </div>
+
+  <div style="margin-top:var(--space-6);display:grid;grid-template-columns:1fr 1fr;gap:var(--space-6)">
+    <div>
+      <h5 style="margin:0">왜 하고 있나</h5>
+      <p style="margin:var(--space-2) 0 0;font-size:12px;color:var(--color-neutral-800);line-height:1.8">MECA 분야 대학원생에게 필요한 것은 국제 공동연구 경험입니다. 해외 연구기관·기업 현장을 직접 경험하게 해 논문과 학위 연구로 이어지도록 설계했습니다.</p>
+    </div>
+    <div>
+      <h5 style="margin:0">기대효과</h5>
+      <p style="margin:var(--space-2) 0 0;font-size:12px;color:var(--color-neutral-800);line-height:1.8">국제 공동연구 역량 강화, 해외 공동학위·국제논문 실적 확대, 그리고 MECA 분야 후속 연구인력 확보입니다.</p>
+    </div>
+  </div>
+
+  <div style="margin-top:auto;padding-top:var(--space-6);border-top:1px solid var(--color-neutral-300);display:flex;gap:var(--space-6);align-items:flex-start">
+    <h6 style="margin:0;color:var(--color-accent);white-space:nowrap;padding-top:3px">Status</h6>
+    <p style="margin:0;font-size:12px;color:var(--color-neutral-800);line-height:1.8">해외파견 목표 10명에 대해 현재 18명(180%)이 확정되었으며, 프로그램은 2026년 12월까지 운영됩니다. 사진과 방문 기관 목록을 주시면 이 페이지에 함께 넣겠습니다.</p>
+  </div>
+</section>
+
+<section class="page" data-screen-label="06 KOICA" style="display:flex;flex-direction:column;padding:var(--space-12);background:var(--color-page);color:var(--color-text);font-family:var(--font-body)">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid var(--color-accent);padding-bottom:var(--space-3)">
+    <h6 style="margin:0;color:var(--color-accent)">04 · KOICA</h6>
+    <h6 style="margin:0;color:var(--color-accent)">06</h6>
+  </div>
+  <div style="margin-top:var(--space-6);align-self:flex-start;background:var(--color-accent);color:#fff;font-family:var(--font-heading);font-weight:800;font-size:11px;letter-spacing:.14em;padding:var(--space-1) var(--space-3);text-transform:uppercase">New · 2026 선정</div>
+  <h2 style="margin:var(--space-4) 0 0;letter-spacing:-.03em;line-height:1.25">KOICA 전문인재 양성 프로그램에<br>선정되었습니다</h2>
+  <p style="margin:var(--space-3) 0 0;font-size:13px;color:var(--color-neutral-700);max-width:520px;line-height:1.8">한국국제협력단(KOICA)의 전문인재 양성 프로그램 운영 대학으로 선정되어, 개발협력 분야 외국인 대학원생을 정규 학위과정으로 유치할 기반을 확보했습니다.</p>
+
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);margin-top:var(--space-6);border-top:2px solid var(--color-accent);border-bottom:2px solid var(--color-accent)">
+    <div style="padding:var(--space-4) var(--space-4) var(--space-4) 0;border-right:1px solid var(--color-neutral-300)">
+      <div class="card-kicker">운영 과정</div>
+      <h5 style="margin:var(--space-2) 0 0">기계공학과 석사학위과정</h5>
+      <p style="margin:var(--space-2) 0 0;font-size:11.5px;color:var(--color-neutral-800);line-height:1.75">제조산업 엔지니어링 분야로 운영합니다. 석사 24개월, 한국어 교육 약 400시간, 산업체 인턴십 6개월을 합쳐 총 30개월 과정입니다.</p>
+    </div>
+    <div style="padding:var(--space-4);border-right:1px solid var(--color-neutral-300)">
+      <div class="card-kicker">선발 대상</div>
+      <h5 style="margin:var(--space-2) 0 0">수원국 13개국</h5>
+      <p style="margin:var(--space-2) 0 0;font-size:11.5px;color:var(--color-neutral-800);line-height:1.75">OECD 개발원조위원회가 지정한 수원국 중 13개국을 대상으로 하며, 베트남·우즈베키스탄·이집트·캄보디아를 우선 선발합니다.</p>
+    </div>
+    <div style="padding:var(--space-4) 0 var(--space-4) var(--space-4)">
+      <div class="card-kicker">지원 범위</div>
+      <h5 style="margin:var(--space-2) 0 0">연수 전반 전액 지원</h5>
+      <p style="margin:var(--space-2) 0 0;font-size:11.5px;color:var(--color-neutral-800);line-height:1.75">왕복항공료, 등록금, 한국어 교육 수강료, 기숙사비, 현장학습비, 생활비, 정착·귀국지원금, 건강보험료를 KOICA가 지원합니다.</p>
+    </div>
+  </div>
+
+  <div style="display:flex;align-items:baseline;gap:var(--space-4);margin-top:var(--space-6);border-bottom:2px solid var(--color-accent);padding-bottom:var(--space-4)">
+    <div style="font-family:var(--font-heading);font-weight:800;font-size:44px;letter-spacing:-.03em;color:var(--color-accent)">18<span style="font-size:18px">명</span></div>
+    <p style="margin:0;font-size:12px;color:var(--color-neutral-800);line-height:1.75;max-width:420px">2026학년도 후기 전형에서 선발이 완료되어, 첫 KOICA 연수생 18명이 기계공학과 석사과정에 입학합니다.</p>
+  </div>
+
+  <h4 style="margin:var(--space-6) 0 0">2026학년도 후기 첫 모집</h4>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);margin-top:var(--space-3);border-top:1px solid var(--color-neutral-300)">
+    <div style="padding:var(--space-4) var(--space-4) var(--space-4) 0;border-right:1px solid var(--color-neutral-300)">
+      <div style="font-size:12.5px;font-weight:600">원서접수</div>
+      <p style="margin:var(--space-1) 0 0;font-size:11.5px;color:var(--color-neutral-700);line-height:1.7">7. 22. ~ 7. 30.</p>
+    </div>
+    <div style="padding:var(--space-4);border-right:1px solid var(--color-neutral-300)">
+      <div style="font-size:12.5px;font-weight:600">서류제출</div>
+      <p style="margin:var(--space-1) 0 0;font-size:11.5px;color:var(--color-neutral-700);line-height:1.7">7. 22. ~ 8. 3.</p>
+    </div>
+    <div style="padding:var(--space-4);border-right:1px solid var(--color-neutral-300)">
+      <div style="font-size:12.5px;font-weight:600">합격자 발표</div>
+      <p style="margin:var(--space-1) 0 0;font-size:11.5px;color:var(--color-neutral-700);line-height:1.7">8. 14.</p>
+    </div>
+    <div style="padding:var(--space-4) 0 var(--space-4) var(--space-4)">
+      <div style="font-size:12.5px;font-weight:600">등록</div>
+      <p style="margin:var(--space-1) 0 0;font-size:11.5px;color:var(--color-neutral-700);line-height:1.7">8. 19. · 등록금 면제</p>
+    </div>
+  </div>
+
+  <p style="margin-top:auto;padding-top:var(--space-6);border-top:1px solid var(--color-neutral-300);font-size:12px;color:var(--color-neutral-800);line-height:1.8">모집·선발은 국제협력팀과 함께 진행하며, KOICA 신입생에게는 앵커사업 MECA 장학금 지원도 연계합니다.</p>
+</section>
+
+<section class="page" data-screen-label="07 BK21" style="display:flex;flex-direction:column;padding:var(--space-12);background:var(--color-page);color:var(--color-text);font-family:var(--font-body)">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid var(--color-accent);padding-bottom:var(--space-3)">
+    <h6 style="margin:0;color:var(--color-accent)">05 · BK21</h6>
+    <h6 style="margin:0;color:var(--color-accent)">07</h6>
+  </div>
+  <h2 style="margin:var(--space-6) 0 0;letter-spacing:-.025em">BK21 사업</h2>
+  <p style="margin:var(--space-2) 0 0;font-size:12.5px;color:var(--color-neutral-700)">4단계 두뇌한국21 · 대학원 연구단 지원</p>
+  <p style="margin:var(--space-6) 0 0;font-size:13px;color:var(--color-neutral-800);line-height:1.85;max-width:560px">BK21은 대학원 교육연구단(팀)을 단위로 대학원생 연구장학금, 신진연구인력 인건비, 교육과정 개선을 지원하는 사업입니다. 조선대학교는 4단계 BK21 사업에 교육연구단 1곳과 교육연구팀 3곳이 참여하고 있으며, 대학원은 참여 연구단의 학사·장학 행정과 성과 관리를 지원합니다.</p>
+
+  <div style="margin-top:var(--space-4);display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--color-neutral-300)">
+    <sc-for list="{{ bkUnits }}" as="b" hint-placeholder-count="4">
+      <div style="padding:var(--space-4) var(--space-6) var(--space-4) 0;border-bottom:1px solid var(--color-neutral-300)">
+        <div class="card-kicker">{{ b.k }}</div>
+        <div style="font-size:13.5px;font-weight:600;margin-top:var(--space-1)">{{ b.t }}</div>
+        <p style="margin:var(--space-1) 0 0;font-size:11px;color:var(--color-neutral-700);line-height:1.65">{{ b.d }}</p>
+      </div>
+    </sc-for>
+  </div>
+
+  <div style="margin-top:var(--space-6);border-top:2px solid var(--color-accent);padding-top:var(--space-4);display:grid;grid-template-columns:repeat(3,1fr)">
+    <div style="padding-right:var(--space-4);border-right:1px solid var(--color-neutral-300)">
+      <h5 style="margin:0">대학원생 연구장학금</h5>
+      <p style="margin:var(--space-2) 0 0;font-size:11.5px;color:var(--color-neutral-800);line-height:1.75">참여 연구단 소속 석·박사과정생에게 연구장학금을 지급합니다.</p>
+    </div>
+    <div style="padding:0 var(--space-4);border-right:1px solid var(--color-neutral-300)">
+      <h5 style="margin:0">신진연구인력 지원</h5>
+      <p style="margin:var(--space-2) 0 0;font-size:11.5px;color:var(--color-neutral-800);line-height:1.75">박사후연구원·계약교수 채용으로 연구단 역량을 보강합니다.</p>
+    </div>
+    <div style="padding-left:var(--space-4)">
+      <h5 style="margin:0">국제화·성과 관리</h5>
+      <p style="margin:var(--space-2) 0 0;font-size:11.5px;color:var(--color-neutral-800);line-height:1.75">해외 공동연구와 국제 학술활동을 지원하고 연차 성과를 점검합니다.</p>
+    </div>
+  </div>
+
+  <sc-if value="{{ showDraftNotes }}" hint-placeholder-val="{{ true }}">
+    <div style="margin-top:var(--space-4);background:var(--color-accent-100);border-left:3px solid var(--color-accent);padding:var(--space-4);font-size:12px;line-height:1.8;color:var(--color-neutral-800)">
+      <span style="font-weight:600;color:var(--color-accent-700)">자료 요청</span> — 연구단별 지원 대학원생 수와 연간 지원 규모를 주시면 수치를 함께 넣겠습니다.
+    </div>
+  </sc-if>
+
+  <p style="margin-top:auto;padding-top:var(--space-4);border-top:1px solid var(--color-neutral-300);font-size:11.5px;color:var(--color-neutral-700);line-height:1.75">교육연구단은 공학기술연구원, 교육연구팀은 각 학과 단위로 운영됩니다.</p>
+</section>
+
+<section class="page" data-screen-label="08 학과 신설" style="display:flex;flex-direction:column;padding:var(--space-12);background:var(--color-page);color:var(--color-text);font-family:var(--font-body)">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid var(--color-accent);padding-bottom:var(--space-3)">
+    <h6 style="margin:0;color:var(--color-accent)">06 · Academic</h6>
+    <h6 style="margin:0;color:var(--color-accent)">08</h6>
+  </div>
+  <h2 style="margin:var(--space-6) 0 0;letter-spacing:-.025em">학과를 새로 만들었습니다</h2>
+  <p style="margin:var(--space-2) 0 0;font-size:12.5px;color:var(--color-neutral-700)">학위과정 신설 및 대학원 학칙 개정</p>
+
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);margin-top:var(--space-6);border-top:2px solid var(--color-accent);border-bottom:2px solid var(--color-accent)">
+    <div style="padding:var(--space-4) var(--space-4) var(--space-4) 0;border-right:1px solid var(--color-neutral-300)">
+      <div class="card-kicker">New · 박사과정</div>
+      <h4 style="margin:var(--space-2) 0 0">원자력발전학과</h4>
+      <p style="margin:var(--space-2) 0 0;font-size:11.5px;color:var(--color-neutral-800);line-height:1.75">에너지 분야 고급 연구인력 수요에 맞춰 박사과정을 신설했습니다.</p>
+    </div>
+    <div style="padding:var(--space-4);border-right:1px solid var(--color-neutral-300)">
+      <div class="card-kicker">New · 융합학과</div>
+      <h4 style="margin:var(--space-2) 0 0">기후위기·환경융합학과</h4>
+      <p style="margin:var(--space-2) 0 0;font-size:11.5px;color:var(--color-neutral-800);line-height:1.75">기후·환경 현안에 대응하는 융합 학위과정을 새로 개설했습니다.</p>
+    </div>
+    <div style="padding:var(--space-4) 0 var(--space-4) var(--space-4)">
+      <div class="card-kicker">추진 · 융합학과</div>
+      <h4 style="margin:var(--space-2) 0 0">반도체융합학과</h4>
+      <p style="margin:var(--space-2) 0 0;font-size:11.5px;color:var(--color-neutral-800);line-height:1.75">반도체첨단패키징 전문인력양성사업을 기반으로 첨단패키징·반도체 공정 분야 석·박사 인력 양성을 위해 신설을 추진합니다.</p>
+    </div>
+  </div>
+
+  <h4 style="margin:var(--space-6) 0 0">함께 추진 중인 개편</h4>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);margin-top:var(--space-3);border-top:1px solid var(--color-neutral-300)">
+    <div style="padding:var(--space-4) var(--space-4) var(--space-4) 0;border-right:1px solid var(--color-neutral-300)">
+      <div style="font-size:13.5px;font-weight:600">웰에이징대학원 신설</div>
+      <p style="margin:var(--space-2) 0 0;font-size:11.5px;color:var(--color-neutral-700);line-height:1.75">3대 융합학과와 함께 신설을 추진하며 학칙 개정과 융합교과목 개발을 진행하고 있습니다. 교육과정은 2027년 3월 운영 예정입니다.</p>
+    </div>
+    <div style="padding:var(--space-4);border-right:1px solid var(--color-neutral-300)">
+      <div style="font-size:13.5px;font-weight:600">연구중심 학위제 도입</div>
+      <p style="margin:var(--space-2) 0 0;font-size:11.5px;color:var(--color-neutral-700);line-height:1.75">Research Master 학위과정 운영계획을 수립하고 참여학과 대학원생 지원 프로그램을 준비하고 있습니다.</p>
+    </div>
+    <div style="padding:var(--space-4) 0 var(--space-4) var(--space-4)">
+      <div style="font-size:13.5px;font-weight:600">학부·대학원 연계 R&amp;D</div>
+      <p style="margin:var(--space-2) 0 0;font-size:11.5px;color:var(--color-neutral-700);line-height:1.75">5개 융합학과와 함께 심화 캡스톤디자인 교과목을 개설해 학부에서 대학원으로 이어지는 경로를 만들고 있습니다.</p>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:var(--space-6)">
+    <div class="card-kicker">지역 협력 학과</div>
+    <div class="card-title">사회적경제학과</div>
+    <p class="card-body" style="line-height:1.75">2022년 9월 개설 이후 장학생 45명을 선발·지원하고 석사 21명을 배출했습니다. 매년 장학생 10명은 광주광역시와 조선대학교가 수업료 전액을 지원하며, 올해 3월에는 ㈜다우환경이 학과 인재 양성을 위해 1,000만 원을 기탁했습니다.</p>
+  </div>
+
+  <p style="margin-top:auto;padding-top:var(--space-4);border-top:1px solid var(--color-neutral-300);font-size:11.5px;color:var(--color-neutral-700);line-height:1.75">신설 학과의 모집 시기와 정원은 학칙 개정 및 대학 심의 절차에 따라 확정됩니다.</p>
+</section>
+
+<section class="page" data-screen-label="09 연구 활성화" style="display:flex;flex-direction:column;padding:var(--space-12);background:var(--color-page);color:var(--color-text);font-family:var(--font-body)">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid var(--color-accent);padding-bottom:var(--space-3)">
+    <h6 style="margin:0;color:var(--color-accent)">07 · Research</h6>
+    <h6 style="margin:0;color:var(--color-accent)">09</h6>
+  </div>
+  <h2 style="margin:var(--space-6) 0 0;letter-spacing:-.025em">연구하는 사람을 지원합니다</h2>
+  <p style="margin:var(--space-2) 0 0;font-size:12.5px;color:var(--color-neutral-700)">대학혁신지원사업 미래 연구 인재 양성</p>
+
+  <div style="margin-top:var(--space-6);border-top:2px solid var(--color-accent)">
+    <sc-for list="{{ research }}" as="r" hint-placeholder-count="3">
+      <div style="padding:var(--space-4) 0;border-bottom:1px solid var(--color-neutral-300)">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:var(--space-4)">
+          <h4 style="margin:0">{{ r.t }}</h4>
+          <span class="tag tag-accent" style="white-space:nowrap">{{ r.stat }}</span>
+        </div>
+        <p style="margin:var(--space-2) 0 0;font-size:12px;color:var(--color-neutral-800);line-height:1.8">{{ r.d }}</p>
+      </div>
+    </sc-for>
+  </div>
+
+  <h4 style="margin:var(--space-8) 0 0">연구비도 직접 지원합니다</h4>
+  <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:var(--space-3);margin-top:var(--space-3)">
+    <div class="card">
+      <div class="card-title">신진연구자(Rookie) 연구지원</div>
+      <p class="card-body" style="line-height:1.75">앵커사업으로 석·박사과정 신진연구자의 연구비를 지원합니다. 전일제 재학생 70명이 확정되어 2학기 등록금에 반영되었습니다.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">MECA 연구활동 지원(SYNERGY-R)</div>
+      <p class="card-body" style="line-height:1.75">포럼과 세미나를 상시 지원합니다. 현재까지 성과교류회·학술대회·세미나 13건을 열었습니다.</p>
+    </div>
+  </div>
+
+  <p style="margin-top:auto;padding-top:var(--space-4);border-top:1px solid var(--color-neutral-300);font-size:11.5px;color:var(--color-neutral-700);line-height:1.75">수치는 2026. 9. 3. 현재 진행 기준이며, 대부분의 프로그램이 하반기까지 계속 운영됩니다.</p>
+</section>
+
+<section class="page" data-screen-label="10 성과공유회" style="display:flex;flex-direction:column;padding:var(--space-12);background:var(--color-page);color:var(--color-text);font-family:var(--font-body)">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid var(--color-accent);padding-bottom:var(--space-3)">
+    <h6 style="margin:0;color:var(--color-accent)">08 · Showcase</h6>
+    <h6 style="margin:0;color:var(--color-accent)">10</h6>
+  </div>
+  <h2 style="margin:var(--space-6) 0 0;letter-spacing:-.025em">성과는 공유회에서 나눕니다</h2>
+  <p style="margin:var(--space-2) 0 0;font-size:12.5px;color:var(--color-neutral-700)">2026학년도 하계 대학원 대학혁신 운영과제 성과공유회 · 2026. 8. 5. 본관 3층 3181강의실</p>
+
+  <div style="margin-top:var(--space-6);border-top:2px solid var(--color-accent);padding-top:var(--space-4)">
+    <div class="grayscale" style="width:100%;height:300px;overflow:hidden">
+      <img src="assets/photo-share-01.jpg" alt="성과공유회 전경" style="width:100%;height:100%;object-fit:cover;display:block">
+    </div>
+    <p style="margin:var(--space-2) 0 0;font-size:11px;color:var(--color-neutral-700)">대학혁신 운영과제에 참여한 대학원생과 지도교원이 한자리에 모였습니다.</p>
+  </div>
+
+  <div style="margin-top:var(--space-4);display:grid;grid-template-columns:1fr 1fr;gap:var(--space-3)">
+    <div>
+      <div class="grayscale" style="width:100%;height:200px;overflow:hidden">
+        <img src="assets/photo-share-02.jpg" alt="개회 인사" style="width:100%;height:100%;object-fit:cover;display:block">
+      </div>
+      <p style="margin:var(--space-2) 0 0;font-size:11px;color:var(--color-neutral-700)">대학원장 개회 인사로 공유회를 열었습니다.</p>
+    </div>
+    <div>
+      <div class="grayscale" style="width:100%;height:200px;overflow:hidden">
+        <img src="assets/photo-share-03.jpg" alt="과제 발표" style="width:100%;height:100%;object-fit:cover;display:block">
+      </div>
+      <p style="margin:var(--space-2) 0 0;font-size:11px;color:var(--color-neutral-700)">참여 대학원생이 프로그램 지원 배경과 활동 목표를 직접 발표했습니다.</p>
+    </div>
+  </div>
+
+  <p style="margin-top:auto;padding-top:var(--space-4);border-top:1px solid var(--color-neutral-300);font-size:11.5px;color:var(--color-neutral-700);line-height:1.75">대학혁신 운영과제에 참여한 학생이 연구 배경과 활동 목표, 수행 결과를 직접 발표하는 자리로, 하계와 동계 두 차례 운영합니다.</p>
+</section>
+
+<section class="page" data-screen-label="11 앵커사업" style="display:flex;flex-direction:column;padding:var(--space-12);background:var(--color-page);color:var(--color-text);font-family:var(--font-body)">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid var(--color-accent);padding-bottom:var(--space-3)">
+    <h6 style="margin:0;color:var(--color-accent)">09 · Anchor</h6>
+    <h6 style="margin:0;color:var(--color-accent)">11</h6>
+  </div>
+  <h2 style="margin:var(--space-6) 0 0;letter-spacing:-.025em">앵커사업 MECA 인재양성</h2>
+  <p style="margin:var(--space-2) 0 0;font-size:12.5px;color:var(--color-neutral-700)">5개 단위과제 · 10개 프로그램 · 현재 진행 기준</p>
+
+  <table class="table" style="margin-top:var(--space-6);font-size:11.5px">
+    <thead>
+      <tr><th style="width:26%">단위과제</th><th style="width:30%">프로그램</th><th>지금 하고 있는 일</th><th style="width:11%">상태</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>공간 고도화</td><td>교육·연구 공간 고도화</td><td>교육·연구 공간 3건, 공동활용 공간 1건 신청 접수</td><td><span class="tag tag-neutral">준비</span></td></tr>
+      <tr><td rowspan="3">맞춤형 연구활동 지원</td><td>석·박사 장학금·플랫폼</td><td>전일제 재학생 70명 선정, 2학기 등록금 반영</td><td><span class="tag tag-accent">진행</span></td></tr>
+      <tr><td>신진연구자(Rookie) 연구지원</td><td>석사·박사 대상 2차 모집 완료</td><td><span class="tag tag-accent">진행</span></td></tr>
+      <tr><td>연구활동 지원(SYNERGY-R)</td><td>포럼·세미나 상시 지원, 13건 개최</td><td><span class="tag tag-accent">진행</span></td></tr>
+      <tr><td rowspan="3">교육과정 개발·운영</td><td>기업 수요 맞춤형 교육과정</td><td>모듈형 교과목 4과목 개발 준비</td><td><span class="tag tag-neutral">준비</span></td></tr>
+      <tr><td>지역문제 해결형 캡스톤디자인</td><td>5개 학과 17명 모집, 6개 팀 운영</td><td><span class="tag tag-accent">진행</span></td></tr>
+      <tr><td>프로젝트 Lab 애로기술지도</td><td>기업 애로기술 자문 운영 준비</td><td><span class="tag tag-neutral">준비</span></td></tr>
+      <tr><td rowspan="2">재직자 역량 강화</td><td>산학연 공동기술개발(R&amp;BD)</td><td>참여기업 협약 완료, 과제 착수 준비</td><td><span class="tag tag-accent">진행</span></td></tr>
+      <tr><td>PBL 기반 업스킬링 아카데미</td><td>재직자 교육 상시 접수</td><td><span class="tag tag-neutral">준비</span></td></tr>
+      <tr><td>글로벌 필드 챌린지</td><td>글로벌 현장학습 지원(GFC)</td><td>싱가포르 18명 파견</td><td><span class="tag tag-accent">진행</span></td></tr>
+    </tbody>
+  </table>
+
+  <div style="margin-top:auto;padding-top:var(--space-6);border-top:2px solid var(--color-accent);display:grid;grid-template-columns:repeat(4,1fr)">
+    <div style="padding-right:var(--space-4);border-right:1px solid var(--color-neutral-300)"><div style="font-family:var(--font-heading);font-weight:800;font-size:26px;color:var(--color-accent)">70<span style="font-size:13px">명</span></div><div style="font-size:11px;color:var(--color-neutral-700);margin-top:var(--space-1)">신진연구자 연구비 지원</div></div>
+    <div style="padding:0 var(--space-4);border-right:1px solid var(--color-neutral-300)"><div style="font-family:var(--font-heading);font-weight:800;font-size:26px;color:var(--color-accent)">92<span style="font-size:13px">명</span></div><div style="font-size:11px;color:var(--color-neutral-700);margin-top:var(--space-1)">특화프로그램 참여</div></div>
+    <div style="padding:0 var(--space-4);border-right:1px solid var(--color-neutral-300)"><div style="font-family:var(--font-heading);font-weight:800;font-size:26px;color:var(--color-accent)">18<span style="font-size:13px">명</span></div><div style="font-size:11px;color:var(--color-neutral-700);margin-top:var(--space-1)">해외 파견</div></div>
+    <div style="padding-left:var(--space-4)"><div style="font-family:var(--font-heading);font-weight:800;font-size:26px;color:var(--color-accent)">13<span style="font-size:13px">건</span></div><div style="font-size:11px;color:var(--color-neutral-700);margin-top:var(--space-1)">학술행사 개최</div></div>
+  </div>
+</section>
+
+<section class="page" data-screen-label="12 후기·보도" style="display:flex;flex-direction:column;padding:var(--space-12);background:var(--color-page);color:var(--color-text);font-family:var(--font-body)">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid var(--color-accent);padding-bottom:var(--space-3)">
+    <h6 style="margin:0;color:var(--color-accent)">10 · Voices · Press</h6>
+    <h6 style="margin:0;color:var(--color-accent)">12</h6>
+  </div>
+  <h2 style="margin:var(--space-6) 0 0;letter-spacing:-.025em">참여자의 목소리</h2>
+  <sc-if value="{{ showDraftNotes }}" hint-placeholder-val="{{ true }}">
+    <div style="margin-top:var(--space-3);background:var(--color-accent-100);border-left:3px solid var(--color-accent);padding:var(--space-4);font-size:12px;line-height:1.8;color:var(--color-neutral-800)"><span style="font-weight:600;color:var(--color-accent-700)">원고 대기</span> — 프로그램명, 참여자 소속·과정, 2~3문장 후기를 주시면 그대로 배치하겠습니다.</div>
+  </sc-if>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);margin-top:var(--space-4);border-top:2px solid var(--color-accent);border-bottom:1px solid var(--color-neutral-300)">
+    <sc-for list="{{ voices }}" as="v" hint-placeholder-count="3">
+      <div style="padding:var(--space-4);border-right:1px solid var(--color-neutral-300)">
+        <div class="card-kicker">{{ v.k }}</div>
+        <p style="margin:var(--space-3) 0 0;font-size:12.5px;line-height:1.85;color:var(--color-neutral-700)">{{ v.q }}</p>
+        <div style="font-size:11.5px;font-weight:600;margin-top:var(--space-3);border-top:1px solid var(--color-neutral-300);padding-top:var(--space-2)">{{ v.by }}</div>
+      </div>
+    </sc-for>
+  </div>
+
+  <h3 style="margin:var(--space-8) 0 0">언론 보도</h3>
+  <div style="margin-top:var(--space-3);border-top:2px solid var(--color-accent)">
+    <sc-for list="{{ press }}" as="p" hint-placeholder-count="3">
+      <div style="display:grid;grid-template-columns:1fr 140px;gap:var(--space-6);padding:var(--space-4) 0;border-bottom:1px solid var(--color-neutral-300)">
+        <div>
+          <div style="font-size:14.5px;font-weight:600">{{ p.t }}</div>
+          <p style="margin:var(--space-1) 0 0;font-size:11.5px;color:var(--color-neutral-700);line-height:1.75">{{ p.d }}</p>
+        </div>
+        <div style="font-size:11px;color:var(--color-neutral-700);line-height:1.75;word-break:break-all;white-space:pre-line">{{ p.meta }}</div>
+      </div>
+    </sc-for>
+  </div>
+</section>
+
+<section class="page" data-screen-label="13 하반기 일정" style="display:flex;flex-direction:column;padding:var(--space-12);background:var(--color-page);color:var(--color-text);font-family:var(--font-body)">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid var(--color-accent);padding-bottom:var(--space-3)">
+    <h6 style="margin:0;color:var(--color-accent)">11 · What's next</h6>
+    <h6 style="margin:0;color:var(--color-accent)">13</h6>
+  </div>
+  <h2 style="margin:var(--space-6) 0 0;letter-spacing:-.025em">하반기에 할 일</h2>
+  <p style="margin:var(--space-2) 0 0;font-size:12.5px;color:var(--color-neutral-700)">2026. 9. ~ 2027. 2.</p>
+
+  <div style="margin-top:var(--space-6);display:grid;grid-template-columns:1fr 1fr;border-top:2px solid var(--color-accent)">
+    <sc-for list="{{ upcoming }}" as="u" hint-placeholder-count="6">
+      <div style="padding:var(--space-4) var(--space-6) var(--space-4) 0;border-bottom:1px solid var(--color-neutral-300)">
+        <div style="font-family:var(--font-heading);font-weight:800;font-size:12.5px;color:var(--color-accent)">{{ u.m }}</div>
+        <p style="margin:var(--space-2) 0 0;font-size:12px;line-height:1.85;color:var(--color-neutral-800)">{{ u.d }}</p>
+      </div>
+    </sc-for>
+  </div>
+
+  <div style="margin-top:auto;padding-top:var(--space-6);border-top:2px solid var(--color-accent);display:flex;justify-content:space-between;align-items:flex-end;gap:var(--space-6)">
+    <div>
+      <img src="assets/gs-logo.png" alt="조선대학교 대학원" style="height:28px;width:auto;display:block">
+      <div style="font-size:11.5px;color:var(--color-neutral-700);line-height:1.8;margin-top:var(--space-3)">발행 조선대학교 대학원 교학팀 · 미래인재융합대학원<br>2026학년도 상반기호 초안 · 2026. 9. 3. 현재 진행 기준<br>문의 대학원 교학팀</div>
+    </div>
+    <h6 style="margin:0;color:var(--color-accent);white-space:nowrap">2026 · 1H</h6>
+  </div>
+</section>
+
+</doc-page>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;paper&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;letter&quot;,&quot;a4&quot;],&quot;default&quot;:&quot;letter&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;문서&quot;},&quot;showDraftNotes&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;문서&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      paper: this.props.paper ?? 'letter',
+      showDraftNotes: this.props.showDraftNotes ?? true,
+      toc: [
+        { n: '03', t: '1월부터 지금까지, 한눈에' },
+        { n: '04', t: '월별 활동 흐름' },
+        { n: '05', t: '글로벌 현장학습' },
+        { n: '06', t: 'KOICA 전문인재 양성 프로그램' },
+        { n: '07', t: 'BK21 사업' },
+        { n: '08', t: '학과 신설과 학사구조 개편' },
+        { n: '09', t: '연구 활성화와 연구비 지원' },
+        { n: '10', t: '대학혁신 운영과제 성과공유회' },
+        { n: '11', t: '앵커사업 MECA 인재양성' },
+        { n: '12', t: '참여자 후기 · 언론 보도' },
+        { n: '13', t: '하반기 주요 일정' },
+      ],
+      programs: [
+        { k: 'Ⅰ', t: '대학혁신지원사업', d: '미래 연구 인재 양성 — Triangle 연구 활성화, 학술장려금, 연구 컨퍼런스' },
+        { k: 'Ⅱ', t: '글로컬사업', d: '웰에이징대학원 신설, 연구중심 학위제, 학부·대학원 연계 R&D' },
+        { k: 'Ⅲ', t: '앵커사업 (Ⅰ-②)', d: 'MECA 인재양성 — 연구비·장학금, 글로벌 현장학습, 교육과정 개발' },
+        { k: 'Ⅳ', t: 'BK21 · KOICA', d: '대학원 연구단 지원과 개발협력 분야 외국인 인재 유치' },
+      ],
+      tiles: [
+        { n: '4', u: '개', l: '동시 수행 국책사업' },
+        { n: '17', u: '개', l: '운영 중인 프로그램' },
+        { n: '3', u: '개', l: '신설·추진 학과' },
+        { n: '36', u: '명', l: '해외 현장학습 파견' },
+        { n: '174', u: '건', l: '논문게재 장학금 지급' },
+        { n: '70', u: '명', l: '신진연구자 연구비 지원' },
+        { n: '68', u: '명', l: 'Triangle 연구 프로그램 참여' },
+        { n: '253', u: '명', l: '연구 컨퍼런스 참여' },
+        { n: '13', u: '건', l: '학술대회·세미나 개최' },
+        { n: '92', u: '명', l: 'MECA 특화프로그램 참여' },
+        { n: '159', u: '명', l: '외국어 대체 강좌 수강' },
+        { n: '18', u: '명', l: 'KOICA 전문인재 양성 선발' },
+      ],
+      timeline: [
+        { m: '1–2', t: '연간 운영계획 수립', d: '사업 계획 확정과 전기 학사일정 준비. 세부 내역은 확인 후 보완 예정입니다.' },
+        { m: '3', t: '앵커사업 프로그램 시작', d: '글로벌 현장학습, 캡스톤디자인, 산학연 공동기술개발, 업스킬링 아카데미 운영 개시' },
+        { m: '4', t: '대학혁신·글로컬사업 착수', d: 'Triangle 연구 활성화 개설, 학술장려금과 연구 컨퍼런스 운영 시작' },
+        { m: '5', t: '학칙 개정과 연구지원 확대', d: '웰에이징대학원·융합학과 신설 추진, MECA 연구활동 지원과 장학금 착수' },
+        { m: '6', t: '신진연구자 연구지원 개시', d: '석·박사과정 신진연구자 연구비 지원 시작' },
+        { m: '7', t: '특화프로그램·교과목 개발', d: 'MECA 특화프로그램 개설, 웰에이징대학원 융합교과목 개발 착수' },
+        { m: '8', t: '학술장려금 1차 지급', d: '논문게재 장학금 1차 지급, 하계 성과공유회 개최, 후기 학사 준비' },
+        { m: '9', t: '후기 학사운영과 2차 모집', d: '외국어시험·종합시험 시행, 컨퍼런스 2차 모집, KOICA 후속 절차 진행' },
+      ],
+      bkUnits: [
+        { k: '교육연구단 · 단장 김석준', t: '노인성질환 제어기술 교육연구단', d: '초고령 사회의 노인성질환 특화 바이오헬스·신약 분야를 이끌 글로벌 교육·연구 인재를 양성합니다. 공학기술연구원 소속으로 운영합니다.' },
+        { k: '교육연구팀 · 팀장 안동규', t: '스마트 기계부품 지역 미래전문인력양성팀', d: '스마트 기계부품 기술을 중심으로 지역사회 발전에 기여하는 인재를 양성합니다. 사업기간 중 평균 SCIE 논문 38.25건, 평균 IF 4.38.' },
+        { k: '교육연구팀 · 팀장 최동유', t: '미래융합 ICT & AI 교육연구팀', d: 'Healthcare, Energy, Culture-contents, Social Communication 4대 특화 분야의 실무형 인재를 양성합니다.' },
+        { k: '교육연구팀 · 팀장 김판구', t: '인공지능기반 초연결사회 IT융합 인력양성팀', d: '차세대 통신, 지능형 정보처리·네트워크, 3D 바이오 이미지, 광정보처리 등 IT융합 특화기술을 연구개발합니다.' },
+      ],
+      research: [
+        { t: 'Triangle 연구 활성화', stat: '참여 68명 · 만족도 4.88', d: '교원·대학원생·학부생을 하나의 팀으로 묶는 멘토링형 연구 프로그램입니다. 2개 유형을 개설해 목표 30명의 두 배가 넘는 학생이 참여했습니다.' },
+        { t: '학술장려금', stat: '174건 지급', d: '논문을 게재한 대학원생과 학부생에게 상시로 장학금을 지급합니다. 8월에 1차 지급을 마쳤고 하반기 실적도 계속 접수하고 있습니다.' },
+        { t: '미래전략 연구 수행 컨퍼런스', stat: '참여 253명 · 만족도 4.73', d: '학과 단위 컨퍼런스를 지원해 대학원생이 직접 발표할 자리를 만듭니다. 무역학과·사회복지학과·선박해양공학과 컨퍼런스와 하계 성과공유회를 운영했고, 하반기에는 타 대학 교류형 컨퍼런스를 추가로 엽니다.' },
+      ],
+      voices: [
+        { k: 'GFC · 싱가포르', q: '“ 해외 현장학습에 참여한 대학원생의 경험과 연구에 미친 영향 ”', by: '○○○ ㅣ ○○학과 석사과정' },
+        { k: 'Triangle', q: '“ 멘토링에 참여한 학생 또는 지도교원의 후기 ”', by: '○○○ ㅣ ○○학과 박사과정' },
+        { k: '학술장려금', q: '“ 논문 게재 장학금을 받은 학생의 연구 이야기 ”', by: '○○○ ㅣ ○○학과 수료연구생' },
+      ],
+      press: [
+        { t: '반도체 인재 키우는 조선대…105억 사업 발판 삼아 대학원 신설', d: '반도체첨단패키징 전문인력양성사업을 기반으로 대학원 반도체융합학과 신설을 추진하고, 첨단산학캠퍼스를 중심으로 교육·연구 인프라를 강화한다는 내용입니다.', meta: '매일경제\n2026. 6. 10.' },
+        { t: '조선대 대학원 사회적경제학과, 지역 혁신 이끌 ‘전문 인재 양성’의 산실로 우뚝', d: '2022년 개설 이후 석사 21명 배출과 장학생 45명 지원 실적, ㈜다우환경의 장학기금 기탁을 다뤘습니다.', meta: '교수신문\n2026. 3. 31.' },
+        { t: '조선대 대학원생 18명, 싱가포르 글로벌 현장학습 파견', d: '보도자료 본문 위치 — 파견 일정과 방문 기관', meta: '보도일 ○○○○. ○. ○.\n매체 ○○○' },
+      ],
+      upcoming: [
+        { m: '2026. 9.', d: '후기 외국어시험과 2학기 종합시험 시행, 수료연구생 등록, 연구 컨퍼런스 2차 모집' },
+        { m: '2026. 10.', d: '글로벌 아웃리치 학회 참가, 웰에이징대학원 오픈하우스 기획' },
+        { m: '2026. 11.', d: '융합교과목 개발 완료, 하반기 학과 컨퍼런스 운영' },
+        { m: '2026. 12.', d: '글로벌 현장학습 종료, 실험실습비 집행 마감과 정산' },
+        { m: '2027. 1.', d: '대학혁신지원사업·글로컬사업 과제 종료 및 결과보고 준비' },
+        { m: '2027. 2.', d: '국책사업 결과보고, 연간 성과 확정' },
+      ],
+    };
+  }
+}
+</script>
+</body>
+</html>
